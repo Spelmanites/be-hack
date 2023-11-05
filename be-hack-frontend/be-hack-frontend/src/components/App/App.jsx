@@ -5,6 +5,7 @@ import LandingPage from "../LandingPage/LandingPage";
 import CarryOnPrompt from "../CarryOnPrompt/CarryOnPrompt"; 
 
 import './App.css'
+import Confirmation from "../Confirmation/Confirmation";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<LandingPage/>} />
           <Route path="/reservecarryon" element={<ReserveCarryOn/>} />
           <Route path="/carryon" element={<CarryOnPrompt/>} />
+          <Route path="/Confirmation" element={<Confirmation/>} />
         
         </Routes>
       </BrowserRouter>
