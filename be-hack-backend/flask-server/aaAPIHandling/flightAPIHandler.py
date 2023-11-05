@@ -37,7 +37,7 @@ def jsonConversion():
       flightDict = {
         'flightNumber': flight["flightNumber"],
         'origin_city': flight["origin"]["city"],
-        # Departure and arrival times are iso 1860 format
+        # Departure and arrival times are iso 1860 format and are in UTC
         # For the purposes of calculations, this time will be assumed to be local
         'destination_city': flight["destination"]["city"],
         'departureTime': flight["departureTime"],
