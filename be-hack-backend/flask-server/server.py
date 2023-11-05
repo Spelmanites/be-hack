@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 # member API route
 
+@app.route("/")
 @app.route("/members")
 def members():
     return{"members":["member1","member2","member3"]}
